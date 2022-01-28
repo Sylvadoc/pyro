@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite-ssr --port 1337",
     "dev:spa": "vite --port 1337",
-    "clean": "rm -rf dist && rm -rf serverless/public && rm -rf serverless/api/renderer",
-    "build": "pnpm clean && cross-env NODE_ENV=production vite-ssr build && ./scripts/move-dist.sh"
+    "clean": "rm -rf dist && rm -rf serverless/public",
+    "build": "pnpm clean && cross-env NODE_ENV=production vite-ssr build"
   },
   "dependencies": {
     "@vueuse/core": "^6.7.6",
