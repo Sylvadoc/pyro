@@ -1,6 +1,6 @@
 # Pyro
 
-> Vue + Vuex + Vite + SSR template
+> Vue 3 + Vuex 4 + Vite 2 + SSR template (vite-ssr)
 
 ## Features
 
