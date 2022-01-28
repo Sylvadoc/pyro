@@ -45,13 +45,19 @@
 ### Dev tools
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [pnpm](https://pnpm.js.org/) - package manager rapide et ascétique
+- [pnpm](https://pnpm.io/) - package manager rapide et ascétique
 - [`vite-ssr`](https://github.com/frandiox/vite-ssr) - Server-side rendering
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Usage
+
+Installer [pnpm](https://pnpm.io/) avec npm (mouarf)
+
+```bash
+npm install -g pnpm
+```
 
 ### Development
 
