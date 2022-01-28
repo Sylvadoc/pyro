@@ -1,8 +1,8 @@
 <template>
-  <div>
-      <h1>Page Index Home</h1>
-      <p>{{ text }}</p>
-  </div>
+    <div>
+        <h1>Page Index Home</h1>
+        <p>{{ text }}</p>
+    </div>
 </template>
 
 <script lang="ts">
@@ -13,7 +13,7 @@ import { Modules, HubGetters } from '~/store'
 export default defineComponent({
     computed: {
         ...mapGetters(Modules.HUB, [HubGetters.GET_TEXT])
-    },
+    }
 })
 </script>
 
