@@ -1,7 +1,9 @@
 export type State = {
-    toto: boolean
+    toto: boolean,
+    text: string
 }
 
 export const state: State = {
-    toto: false
+    toto: false,
+    text: 'bonjour la compagnie'
 }
