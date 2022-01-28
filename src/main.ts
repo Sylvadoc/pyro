@@ -4,6 +4,7 @@ import { createHead } from '@vueuse/head'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
+import store from '~/store'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -23,6 +24,7 @@ export default viteSSR(
 
     const head = createHead()
     app.use(head)
+    app.use(store)
 
     app.component(ClientOnly.name, ClientOnly)
 
@@ -35,7 +37,6 @@ export default viteSSR(
       console.log('Initial state:', initialState)
     }
 
-    // As an example, make a getPageProps request before each route navigation
     router.beforeEach(async (to, from, next) => {
       if (!!to.meta.state && (!import.meta.env.DEV || import.meta.env.SSR)) {
         // This route has state already (from server) so it can be reused.
