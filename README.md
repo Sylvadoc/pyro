@@ -42,8 +42,6 @@
 - [`vite-ssr`](https://github.com/frandiox/vite-ssr) - Server-side rendering
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Usage
