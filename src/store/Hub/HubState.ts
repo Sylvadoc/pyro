@@ -5,5 +5,5 @@ export type State = {
 
 export const state: State = {
     toto: false,
-    text: 'bonjour la compagnie'
+    text: 'bien le bonjour depuis le module hub du store'
 }
