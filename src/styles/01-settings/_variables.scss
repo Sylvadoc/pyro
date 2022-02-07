@@ -1,3 +1,5 @@
+$black: #000000;
+$white: #ffffff;
 /// breakpoints (overrides _vendor/_include-media/include-media)
 /// doc : http://include-media.com/documentation/
 /* stylelint-disable */
@@ -15,3 +17,4 @@ $breakpoints: (
         mobile                      :   640px,
         desktop                     :   1024px
 );
+/* stylelint-enable */

@@ -1,10 +1,11 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
-*, * + * {
+*,
+* + * {
     box-sizing: border-box;
 }
 
@@ -24,32 +25,39 @@ img {
     vertical-align: middle;
 }
 
-[type=checkbox],
-[type=radio] {
+[type='checkbox'],
+[type='radio'] {
     cursor: pointer;
 }
 
 ::selection {
-    background: springgreen !important;
+    background: #00ff7fff !important;
 }
 
 // suppression du lag lié au touch sur mobile
-a, button, input, textarea, select, label {
-    -ms-touch-action: manipulation;
+
+a,
+button,
+input,
+textarea,
+select,
+label {
+    touch-action: manipulation;
     touch-action: manipulation;
 }
 
 // https://mobile.twitter.com/LeaVerou/status/1045768279753666562
 // pas de focus au clic mais au clavier oui
-:focus:not(:focus-visible) { outline: none }
+
+:focus:not(:focus-visible) { outline: none; }
 
 // pas d'animation si l'utilisateur a choisi de ne pas en avoir
 // on laisse un minimum d'animation afin de ne pas casser les events js animationEnd & transitionEnd
 @media (prefers-reduced-motion: reduce) {
     * {
-        animation-duration: 0.01ms !important;
+        animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+        transition-duration: .01ms !important;
         scroll-behavior: auto !important;
     }
 }
@@ -65,17 +73,19 @@ a, button, input, textarea, select, label {
 }
 
 /* hide cloud media image */
-img[src*="cloud-media"] {
+
+[src*='cloud-media'] {
     display: none;
 }
 
 /* hide fca tracker */
+
 .fca-tracker {
-    border: 0;
-    padding: 0;
-    width: 1px !important;
-    height: 1px !important;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
     position: absolute;
+    overflow: hidden;
+    width: .1rem !important;
+    height: .1rem !important;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
 }

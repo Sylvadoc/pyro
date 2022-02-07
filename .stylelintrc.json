@@ -1,0 +1,102 @@
+{
+    "extends": "stylelint-config-sass-guidelines",
+    "plugins": [
+        "stylelint-a11y",
+        "stylelint-scss",
+        "stylelint-order"
+    ],
+    "rules": {
+        "a11y/selector-pseudo-class-focus": true,
+        "a11y/font-size-is-readable": true,
+        "at-rule-no-unknown": null,
+        "color-hex-case": "lower",
+        "color-hex-length": "long",
+        "color-named": "never",
+        "declaration-block-trailing-semicolon": "always",
+        "function-url-quotes": "always",
+        "indentation": 4,
+        "media-feature-colon-space-after": "always",
+        "max-nesting-depth": 3,
+        "max-empty-lines": 2,
+        "no-duplicate-selectors": true,
+        "number-leading-zero": "never",
+        "order/properties-alphabetical-order": null,
+        "order/properties-order": [
+            "position",
+            "bottom",
+            "left",
+            "right",
+            "top",
+            "z-index",
+            "display",
+            "flex",
+            "flex-wrap",
+            "justify-content",
+            "align-items",
+            "grid-column",
+            "overflow",
+            "width",
+            "height",
+            "max-width",
+            "max-height",
+            "content",
+            "margin",
+            "padding",
+            "border",
+            "border-color",
+            "font",
+            "font-family",
+            "font-size",
+            "line-height",
+            "text-align",
+            "text-decoration",
+            "white-space",
+            "color",
+            "box-shadow",
+            "background",
+            "background-color",
+            "background-position",
+            "transform",
+            "transition",
+            "animation"
+        ],
+        "order/properties-alphabetical-order": null,
+        "property-no-unknown": [
+            true,
+            {
+                "ignoreProperties": ["box-orient"]
+            }
+        ],
+        "rule-empty-line-before": [
+            "always",
+            {
+                "except": ["inside-block"]
+            }
+        ],
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": ["@property"]
+            }
+        ],
+        "selector-attribute-quotes": "always",
+        "selector-class-pattern": [
+            "^[a-z0-9\\-\\_]+$",
+            {
+                "message": "Selector should be written in lowercase with hyphens or underscores (selector-class-pattern)"
+            }
+        ],
+        "selector-combinator-space-after": "always",
+        "selector-max-universal": 3,
+        "selector-max-id": 1,
+        "unit-disallowed-list": ["px"],
+        "value-no-vendor-prefix": [
+            true,
+            {
+                "ignoreValues": ["-webkit-box"]
+            }
+        ],
+        "declaration-colon-space-after": "always-single-line",
+        "declaration-colon-space-before": "never"
+    }
+}

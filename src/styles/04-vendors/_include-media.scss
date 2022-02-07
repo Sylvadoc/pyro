@@ -28,7 +28,7 @@
 ///  $breakpoints: ('phone': 320px);
 ///
 
-@import "../01-settings/variables";
+@import '../01-settings/variables';
 
 ///
 /// Creates a list of static expressions or media types
@@ -42,13 +42,13 @@
 ///  );
 ///
 $media-expressions: (
-        'screen': 'screen',
-        'print': 'print',
-        'handheld': 'handheld',
-        'landscape': '(orientation: landscape)',
-        'portrait': '(orientation: portrait)',
-        'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
-        'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
+    'screen': 'screen',
+    'print': 'print',
+    'handheld': 'handheld',
+    'landscape': '(orientation: landscape)',
+    'portrait': '(orientation: portrait)',
+    'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
+    'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
 ) !default;
 
 ///
@@ -73,9 +73,9 @@ $media-expressions: (
 ///  @media (min-width: 2.1rem) {}
 ///
 $unit-intervals: (
-        'px': 1,
-        'em': 0.01,
-        'rem': 0.1
+    'px': 1,
+    'em': .01,
+    'rem': .1
 ) !default;
 
 ///
@@ -228,7 +228,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 
             // scss-lint:disable SpaceAroundOperator
             @if ($prefix == 'max' and $value <= $no-media-breakpoint-value) or
-          ($prefix == 'min' and $value > $no-media-breakpoint-value) {
+                ($prefix == 'min' and $value > $no-media-breakpoint-value) {
                 @return false;
             }
         } @else if not index($im-no-media-expressions, $condition) {
@@ -418,8 +418,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
         $character: str-slice($value, $i, $i);
 
         @if not (index(map-keys($numbers), $character) or $character == '.') {
-            @return to-length(if($minus, -$result, $result), str-slice($value, $i))
-        }
+            @return to-length(if($minus, -$result, $result), str-slice($value, $i)); }
 
         @if $character == '.' {
             $digits: 1;
@@ -538,7 +537,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 @mixin media($conditions...) {
     // scss-lint:disable SpaceAroundOperator
     @if ($im-media-support and length($conditions) == 0) or
-      (not $im-media-support and im-intercepts-static-breakpoint($conditions...)) {
+        (not $im-media-support and im-intercepts-static-breakpoint($conditions...)) {
         @content;
     } @else if ($im-media-support and length($conditions) > 0) {
         @media #{unquote(parse-expression(nth($conditions, 1)))} {

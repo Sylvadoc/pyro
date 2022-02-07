@@ -9,7 +9,8 @@
     "dev:spa": "vite --port 1337",
     "clean": "rm -rf dist && rm -rf serverless/public",
     "build": "pnpm clean && cross-env NODE_ENV=production vite-ssr build",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "lint-sass": "npx stylelint \"./src/styles/**/*.scss\" --fix --allow-empty-input"
   },
   "dependencies": {
     "@vueuse/core": "^6.7.6",
@@ -27,7 +28,6 @@
     "@vue/compiler-sfc": "^3.2.29",
     "@vue/server-renderer": "^3.2.29",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.16",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.20.0",
     "node-fetch": "^3.2.0",
@@ -37,6 +37,11 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.66.1",
     "sass": "^1.49.7",
+    "stylelint": "^14.3.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0",
     "typescript": "4.4.4",
     "unplugin-vue-components": "^0.17.15",
     "vite": "^2.7.13",
