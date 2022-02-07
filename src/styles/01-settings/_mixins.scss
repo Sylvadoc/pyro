@@ -1,0 +1,166 @@
+/// don't forget all events on a link
+@mixin on-event($self: false) {
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}
+
+/* ===== créer facilement des flèches triangle dans toutes les directions
+================================================================================== */
+
+@mixin triangle($size, $color, $direction) {
+	height: 0;
+	width: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: $size / 2;
+	@if $direction == up {
+		border-bottom-color: $color;
+	} @else if $direction == right {
+		border-left-color:   $color;
+	} @else if $direction == down {
+		border-top-color:    $color;
+	} @else if $direction == left {
+		border-right-color:  $color;
+	} @else if $direction == downshadow {
+		border-bottom-color: $color;
+		border-left-color: $color;
+		transform-origin: 0 0;
+		transform: rotate(-45deg);
+	}
+}
+
+/* ===== créer facilement des flèches différentes tailles, couleur et directions
+================================================================================== */
+@mixin arrow($size, $thickness, $direction) {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: $size * 2;
+	height: $size * 2;
+	transition: transform .3s;
+	border: .2rem solid transparent;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: $size;
+		height: $size;
+		border-bottom: $thickness solid;
+		border-right: $thickness solid;
+		border-color: currentColor;
+
+		@if $direction == down {
+			transform: rotate(45deg) translate3d(-1px,-1px,0);
+		}
+		@if $direction == up {
+			transform: rotate(225deg);
+		}
+		@if $direction == left {
+			transform: rotate(-225deg);
+		}
+		@if $direction == right {
+			transform: rotate(-45deg);
+		}
+
+		&:hover {
+			border-color: currentColor;
+		}
+	}
+}
+
+/* ===== créer des croix (de fermeture) de différentes tailles, épaisseur
+================================================================================== */
+@mixin cross($container-size, $size, $thickness) {
+	position: relative;
+	display: block;
+	width: $container-size;
+	height: $container-size;
+	border: .2rem solid transparent;
+
+	&:after,
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: $size;
+		height: $thickness;
+		background: currentColor;
+		transform: rotate(45deg);
+		border-radius: 5px;
+		top: 8px;
+		left: 1px;
+	}
+	&:after {
+		transform: rotate(-45deg)
+	}
+}
+
+/* ========== Full width
+================================================== */
+@mixin wrapper-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* ===== bloc rond avec ombre type DetailClassified
+================================================================================== */
+@mixin shadowBlock {
+    background-color: white;
+    border: .1rem solid $border-color-classified;
+    padding: $big-gutter;
+    border-radius: $big-radius;
+    box-shadow: 0 0 .8rem rgba(black, .2);
+}
+
+@mixin defaultFormInput {
+    background-color: white;
+    border: .1rem solid $grey-light-v2;
+    border-radius: $small-radius;
+    padding: 1rem;
+    &::placeholder {
+        color: $grey55;
+        font-style: normal;
+        opacity: 1;
+    }
+    &:focus {
+		border-color: $green-agence;
+        outline: 0;
+        box-shadow: unset;
+    }
+}
+
+/* ===== Gestion des floats
+================================================================================== */
+@mixin clearfix {
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+/* ===== Reset des styles boutons
+================================================================================== */
+@mixin resetButton {
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}

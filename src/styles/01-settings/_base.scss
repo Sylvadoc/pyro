@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, * + * {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // > 1024px
+    @include media('>medium-plus-screen') {
+        font-size: 1.6rem;
+    }
+}
+
+img {
+    vertical-align: middle;
+}
+
+[type=checkbox],
+[type=radio] {
+    cursor: pointer;
+}
+
+::selection {
+    background: springgreen !important;
+}
+
+// suppression du lag lié au touch sur mobile
+a, button, input, textarea, select, label {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+// https://mobile.twitter.com/LeaVerou/status/1045768279753666562
+// pas de focus au clic mais au clavier oui
+:focus:not(:focus-visible) { outline: none }
+
+// pas d'animation si l'utilisateur a choisi de ne pas en avoir
+// on laisse un minimum d'animation afin de ne pas casser les events js animationEnd & transitionEnd
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// pas d'images ou vidéo si l'utilisateur a choisi de naviguer en mode dégradé
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data
+// sur chrome canary derrière un flag : chrome://flags
+// #enable-experimental-web-platform-features
+@media (prefers-reduced-data: reduce) {
+    video {
+        display: none;
+    }
+}
+
+/* hide cloud media image */
+img[src*="cloud-media"] {
+    display: none;
+}
+
+/* hide fca tracker */
+.fca-tracker {
+    border: 0;
+    padding: 0;
+    width: 1px !important;
+    height: 1px !important;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+}

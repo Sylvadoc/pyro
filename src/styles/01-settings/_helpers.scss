@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+// -----------------------------------------------------------------------------
+// STYLES TRANSVERSAUX
+// -----------------------------------------------------------------------------
+
+
+// liste brutes
+.unstyled {
+    list-style: none none;
+    margin: 0;
+    padding: 0;
+}
+
+// cacher quelque chose
+.hide {
+    visibility: hidden;
+}
+.veryhide {
+    display: none !important;
+}
+
+// cacher une image
+.hide-img {
+    position: absolute;
+    top: -999rem;
+    left: -999rem;
+}
+
+/* ================ icons arrow
+=================================================== */
+
+// coche
+.arrow-to-bottom-small {
+    @include arrow(.5rem, .1499rem, down);
+}
+.arrow-to-bottom-big {
+    @include arrow(.7rem, .16rem, down);
+}
+.arrow-to-right-small {
+    @include arrow(.5rem, .1499rem, right);
+}
+.arrow-to-right-big {
+    @include arrow(.7rem, .16rem, right);
+}
+.arrow-to-right-huge {
+    @include arrow(1rem, .249rem, right);
+}
+
+// fleche
+.arrow-right {
+    position: relative;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1rem;
+}
+.arrow-right::after,
+.arrow-right::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    right: .3rem;
+}
+.arrow-right::before {
+    bottom: .55rem;
+    width: 1rem;
+    height: .2rem;
+    opacity: .6;
+    background: currentColor;
+}
+.arrow-right::after {
+    bottom: .32rem;
+    width: .6rem;
+    height: .6rem;
+    border-top: .1rem solid;
+    border-right: .1rem solid;
+    transform: rotate(45deg);
+}
+
+// check
+.ic-check {
+    position: relative;
+    display: block;
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    border-radius: 10rem;
+
+    &::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: .45rem;
+        top: 0;
+        width: .6rem;
+        height: 1rem;
+        border-color: currentColor;
+        border-width: 0 .2rem .2rem 0;
+        border-style: solid;
+        transform-origin: bottom left;
+        transform: rotate(45deg);
+    }
+}
+
+/* ========== clear floating elements
+================================================== */
+.clearfix:after {
+    @include clearfix;
+}
+
+/* ========== Full width
+================================================== */
+.wrapper-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* ========== ICON CSS
+================================================== */
+.css-icon-mail,
+.css-icon-mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 1.4rem;
+    border: .2rem solid;
+}
+.css-icon-mail {
+    overflow: hidden;
+    position: relative;
+    width: 1.8rem;
+    border-radius: .2rem;
+}
+.css-icon-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: .3rem;
+    width: 1.4rem;
+    transform: rotate(-45deg);
+    bottom: .3rem;
+    left: 0;
+}

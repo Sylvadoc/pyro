@@ -8,6 +8,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import viteSSR from 'vite-ssr/plugin'
 
 export default defineConfig({
+    envPrefix: 'VUE_APP_',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,

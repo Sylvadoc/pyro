@@ -1,0 +1,17 @@
+/// breakpoints (overrides _vendor/_include-media/include-media)
+/// doc : http://include-media.com/documentation/
+/* stylelint-disable */
+$breakpoints: (
+        tiny-screen                 :   320px,
+        tiny-plus-screen            :   480px,
+        small-screen                :   640px,
+        small-plus-screen           :   768px,
+        medium-screen               :   960px,
+        medium-plus-screen          :   1024px,
+        large-screen                :   1280px,
+        large-plus-screen           :   1440px,
+        extra-large-screen          :   1600px,
+        ultra-large-screen          :   1920px,
+        mobile                      :   640px,
+        desktop                     :   1024px
+);
