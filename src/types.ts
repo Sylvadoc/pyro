@@ -1,3 +1,3 @@
-import { Context } from "vite-ssr/vue";
+import { Context } from 'vite-ssr/vue'
 
-export type UserModule = (ctx: Context) => void;
+export type UserModule = (ctx: Context)=> void

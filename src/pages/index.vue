@@ -2,6 +2,11 @@
     <div>
         <h1>Homepage immobilier.lefigaro.fr</h1>
         <p>{{ text }}</p>
+        <ul>
+            <li>
+                <router-link to="/immobilier">Home page hub</router-link>
+            </li>
+        </ul>
     </div>
 </template>
 

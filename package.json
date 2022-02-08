@@ -9,7 +9,7 @@
     "dev:spa": "vite --port 1337",
     "clean": "rm -rf dist && rm -rf serverless/public",
     "build": "pnpm clean && cross-env NODE_ENV=production vite-ssr build",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore --fix ./",
     "lint-sass": "npx stylelint \"./src/styles/**/*.scss\" --fix --allow-empty-input"
   },
   "dependencies": {

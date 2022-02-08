@@ -12,11 +12,11 @@ useHead({
         { property: 'og:title', content: DEFAULT_HEAD_META_TITLE }
     ],
     link: [
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: 'anonymous'},
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'},
-        { rel: 'preconnect', href: 'https://lh3.googleusercontent.com', crossorigin: 'anonymous'},
-        { rel: 'preconnect', href: 'https://immo-cdn.immo.fcms.io', crossorigin: 'anonymous'},
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap'}
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: 'anonymous' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        { rel: 'preconnect', href: 'https://lh3.googleusercontent.com', crossorigin: 'anonymous' },
+        { rel: 'preconnect', href: 'https://immo-cdn.immo.fcms.io', crossorigin: 'anonymous' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap' }
     ]
 })
 </script>

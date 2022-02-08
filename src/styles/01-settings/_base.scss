@@ -89,13 +89,3 @@ label {
     border: 0;
     clip: rect(0 0 0 0);
 }
-
-a {
-    color: $green-primary;
-    text-decoration: none;
-
-    @include on-event {
-        color: $green-secondary;
-        text-decoration: underline;
-    }
-}

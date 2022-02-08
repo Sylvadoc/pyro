@@ -7,11 +7,11 @@ module.exports = {
         'plugin:vue/vue3-essential',
         'eslint:recommended'
     ],
-    'plugins': ["@typescript-eslint"],
+    'plugins': ['@typescript-eslint'],
     parserOptions: {
         parser: '@typescript-eslint/parser'
     },
-    "overrides": [
+    'overrides': [
         {
             env: {
                 jest: true
@@ -23,8 +23,8 @@ module.exports = {
         },
         {
             // enable the rule specifically for TypeScript files
-            "files": ["*.ts", "*.tsx"],
-            "rules": {
+            'files': ['*.ts', '*.tsx'],
+            'rules': {
                 '@typescript-eslint/ban-ts-comment': 'off',
                 '@typescript-eslint/ban-types': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',

@@ -8,8 +8,8 @@ export enum GetterTypes {
 }
 
 export type Getters = {
-    [GetterTypes.GET_TOTO]: (state: State) => boolean,
-    [GetterTypes.GET_TEXT]: (state: State) => string
+    [GetterTypes.GET_TOTO]: (state: State)=> boolean,
+    [GetterTypes.GET_TEXT]: (state: State)=> string
 }
 
 export const getters: GetterTree<State, RootState> & Getters = {

@@ -14,11 +14,11 @@
                 <td></td>
                 <td></td>
             </tr>
-          <tr>
-            <td>rouge secondaire</td>
-            <td></td>
-            <td></td>
-          </tr>
+            <tr>
+                <td>rouge secondaire</td>
+                <td></td>
+                <td></td>
+            </tr>
             <tr>
                 <td>vert primaire</td>
                 <td>#097c75</td>

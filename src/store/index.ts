@@ -12,7 +12,7 @@ const store = createStore({
     modules: {
         [Modules.HUB]: hubModule
     }
-});
+})
 
 export type RootState = State
 export { HubActions, HubGetters }
