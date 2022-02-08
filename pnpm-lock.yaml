@@ -1,41 +1,41 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^17.0.13
-  '@typescript-eslint/eslint-plugin': ^4.33.0
-  '@typescript-eslint/parser': ^4.33.0
-  '@vitejs/plugin-vue': ^2.1.0
-  '@vue/compiler-sfc': ^3.2.29
-  '@vue/server-renderer': ^3.2.29
-  '@vueuse/core': ^6.7.6
-  '@vueuse/head': ^0.7.5
-  cross-env: ^7.0.3
-  eslint: ^7.32.0
-  eslint-plugin-vue: ^7.20.0
-  node-fetch: ^3.2.0
-  pnpm: ^6.3.0
-  postcss: ^8.4.6
-  postcss-preset-env: ^7.3.1
-  rimraf: ^3.0.2
-  rollup: ^2.66.1
-  sass: ^1.49.7
-  stylelint: ^14.3.0
-  stylelint-a11y: ^1.2.3
-  stylelint-config-sass-guidelines: ^9.0.1
-  stylelint-order: ^5.0.0
-  stylelint-scss: ^4.1.0
+  '@types/node': 17.0.13
+  '@typescript-eslint/eslint-plugin': 4.33.0
+  '@typescript-eslint/parser': 4.33.0
+  '@vitejs/plugin-vue': 2.1.0
+  '@vue/compiler-sfc': 3.2.29
+  '@vue/server-renderer': 3.2.29
+  '@vueuse/core': 6.7.6
+  '@vueuse/head': 0.7.5
+  cross-env: 7.0.3
+  eslint: 7.32.0
+  eslint-plugin-vue: 7.20.0
+  node-fetch: 3.2.0
+  pnpm: 6.3.0
+  postcss: 8.4.6
+  postcss-preset-env: 7.3.1
+  rimraf: 3.0.2
+  rollup: 2.66.1
+  sass: 1.49.7
+  stylelint: 14.3.0
+  stylelint-a11y: 1.2.3
+  stylelint-config-sass-guidelines: 9.0.1
+  stylelint-order: 5.0.0
+  stylelint-scss: 4.1.0
   typescript: 4.4.4
-  unplugin-vue-components: ^0.17.15
-  vite: ^2.7.13
-  vite-plugin-pages: ^0.20.0
-  vite-plugin-vue-layouts: ^0.5.0
-  vite-ssr: ^0.15.0
-  vue: ^3.2.29
-  vue-router: ^4.0.12
-  vuex: ^4.0.2
+  unplugin-vue-components: 0.17.15
+  vite: 2.7.13
+  vite-plugin-pages: 0.20.0
+  vite-plugin-vue-layouts: 0.5.0
+  vite-ssr: 0.15.0
+  vue: 3.2.29
+  vue-router: 4.0.12
+  vuex: 4.0.2
 
 dependencies:
-  '@vueuse/core': 6.9.2_vue@3.2.29
+  '@vueuse/core': 6.7.6_vue@3.2.29
   '@vueuse/head': 0.7.5_vue@3.2.29
   vite-ssr: 0.15.0_bd36deb820d1128cccd8d6001dc14b71
   vue: 3.2.29
@@ -53,7 +53,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-plugin-vue: 7.20.0_eslint@7.32.0
   node-fetch: 3.2.0
-  pnpm: 6.28.0
+  pnpm: 6.3.0
   postcss: 8.4.6
   postcss-preset-env: 7.3.1_postcss@8.4.6
   rimraf: 3.0.2
@@ -451,8 +451,8 @@ packages:
   /@vue/shared/3.2.29:
     resolution: {integrity: sha512-BjNpU8OK6Z0LVzGUppEk0CMYm/hKDnZfYdjSmPOs0N+TR1cLKJAkDwW8ASZUvaaSLEi6d3hVM7jnWnX+6yWnHw==}
 
-  /@vueuse/core/6.9.2_vue@3.2.29:
-    resolution: {integrity: sha512-FRwl4ccSFuHZBHLGgS9TMv/+Dd6XFaL4o9nph2qtgQIV+z29RBFokw08XjHfykiENRzB01MjYHJ7iRUnsIFQXg==}
+  /@vueuse/core/6.7.6_vue@3.2.29:
+    resolution: {integrity: sha512-oVyqARXnTvhf4m6xf/sHw+SNJWcRYJn8+L4TZTFBU9POf9GIzBN7iHD2Oc4K4rTWXGQzXfoFHgbrXyeMFCRoqA==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -462,7 +462,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vueuse/shared': 6.9.2_vue@3.2.29
+      '@vueuse/shared': 6.7.6_vue@3.2.29
       vue: 3.2.29
       vue-demi: 0.12.1_vue@3.2.29
     dev: false
@@ -475,8 +475,8 @@ packages:
       vue: 3.2.29
     dev: false
 
-  /@vueuse/shared/6.9.2_vue@3.2.29:
-    resolution: {integrity: sha512-lAiMh6XROs0kSKVd0Yb/6GKoQMxC1fYrFDi6opvQWISPtcqRNluRrQxLUZ3WTI78ovtoKRLktjhkFAtydcfFDg==}
+  /@vueuse/shared/6.7.6_vue@3.2.29:
+    resolution: {integrity: sha512-MfzTKkFK63PcjDdTpJRuJqylpyUdXpic9ueTRcgpPizqFpoYIuI6DkdYjub2Ch5+OYYhVnCqe8ynW6WzYo7DGQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -2172,8 +2172,8 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  /pnpm/6.28.0:
-    resolution: {integrity: sha512-6k0bXft4zengPSmQFx2rTkRrvp2CpXRytNAY/vjvi/7YzVm5GCDY4Uiz8A80lEEf6D1UZ32P9bG9yEiS4crmvQ==}
+  /pnpm/6.3.0:
+    resolution: {integrity: sha512-mSeVHYbCiPgpQjoib15GzeYae9Ttth1WKuhGe49UwlttYRHYXEsvW+JsEiX4Zm9bltFvSl7dKevCCrm1JJB0qg==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true

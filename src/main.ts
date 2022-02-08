@@ -1,4 +1,3 @@
-import './styles/main.css'
 import viteSSR, { ClientOnly } from 'vite-ssr'
 import { createHead } from '@vueuse/head'
 import generatedRoutes from 'virtual:generated-pages'
