@@ -24,5 +24,5 @@ export default defineComponent({
 
 <route lang="yaml">
 meta:
-  layout: default
+    layout: default
 </route>

@@ -1,15 +1,13 @@
 <template>
-    <div>
-        <h1>Homepage page hub</h1>
-        <ul>
-            <li>
-                <a href="https://immobilier.lefigaro.fr">Immobilier Figaro</a>
-            </li>
-            <li>
-                <router-link to="/">Home page</router-link>
-            </li>
-        </ul>
-    </div>
+    <h1>Homepage page hub</h1>
+    <ul>
+        <li>
+            <a href="https://immobilier.lefigaro.fr">Immobilier Figaro</a>
+        </li>
+        <li>
+            <router-link to="/">Home page</router-link>
+        </li>
+    </ul>
 </template>
 
 <script lang="ts">
@@ -26,5 +24,5 @@ export default defineComponent({
 
 <route lang="yaml">
 meta:
-layout: default
+    layout: hub
 </route>
