@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Page Index Home</h1>
+        <h1>Homepage immobilier.lefigaro.fr</h1>
         <p>{{ text }}</p>
     </div>
 </template>
@@ -19,5 +19,5 @@ export default defineComponent({
 
 <route lang="yaml">
 meta:
-  layout: home
+  layout: default
 </route>

@@ -1,23 +1,22 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-
-const title = 'Pyro'
-const description = 'Pyro stack vue3'
+import { DEFAULT_HEAD_META_DESCRIPTION, DEFAULT_HEAD_META_TITLE } from '~/constants/meta-constants'
 
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-    title,
+    title: DEFAULT_HEAD_META_TITLE,
     meta: [
-        { name: 'description', content: description },
-        { name: 'description', content: description },
-        { property: 'og:title', content: title },
-        {
-            property: 'og:image',
-            content:
-        'https://repository-images.githubusercontent.com/341177866/d42c1300-7633-11eb-84fd-ec68894d4fc9'
-        }
+        { name: 'description', content: DEFAULT_HEAD_META_DESCRIPTION },
+        { property: 'og:title', content: DEFAULT_HEAD_META_TITLE }
+    ],
+    link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: 'anonymous'},
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'},
+        { rel: 'preconnect', href: 'https://lh3.googleusercontent.com', crossorigin: 'anonymous'},
+        { rel: 'preconnect', href: 'https://immo-cdn.immo.fcms.io', crossorigin: 'anonymous'},
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap'}
     ]
 })
 </script>
